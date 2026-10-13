@@ -47,6 +47,22 @@ public class MusicPlayer
     }
     
     /**
+     * 
+     */
+    public void playFullTrack(String filename)
+    {
+        try {
+            setupPlayer(filename);
+            player.play();
+        }
+        catch(JavaLayerException e) {
+            reportProblem(filename);
+        }
+        finally {
+            killPlayer();
+        }
+    }
+    /**
      * Start playing the given audio file.
      * The method returns once the playing has been started.
      * @param filename The file to be played.
