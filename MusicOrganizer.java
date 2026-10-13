@@ -129,8 +129,8 @@ public class MusicOrganizer
     }
     
     /**
-     * Play a random song
-     * Takes a song from the array of songs and plays it at random
+     * Play a random song.
+     * Takes a song from the array of songs and plays it at random.
      */
     public void playRandom()
     {
@@ -142,7 +142,8 @@ public class MusicOrganizer
     }
     
     /**
-     * Play all four songs in a random order
+     * Play all four songs in a random order.
+     * Takes all four songs in the array and plays them in a random sequence, then stops when they've all played.
      */
     public void songShuffle()
     {
